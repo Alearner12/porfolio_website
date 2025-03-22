@@ -39,6 +39,12 @@ export default function Books() {
                     <Text className="underline font-bold hover:text-purple-500">
                         <Link href="/notes/books/llm-from-scratch-raschka/">LLMs From Scratch by Sebastian Raschka</Link>
                     </Text>
+                    <Text className="underline font-bold hover:text-purple-500">
+                        <Link href="/notes/books/Intro-to-algorithms/">Introduction to algorithms</Link>
+                    </Text>
+                    <Text className="underline font-bold hover:text-purple-500">
+                        <Link href="/notes/books/competitive_programming/">Competitive programming 3</Link>
+                    </Text>
                     <Text variant = 'red'>
                         ^The pages within this section are currently under construction.
                     </Text>

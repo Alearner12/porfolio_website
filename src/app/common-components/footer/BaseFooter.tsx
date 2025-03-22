@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { cn } from '@/styles/lib/utils'
 import { monoFont } from '@/styles/fonts/fonts'
 import { Github, Twitter, Mail } from 'lucide-react'
@@ -25,8 +26,14 @@ export function BaseFooter({
     showSocialLinks = true,
     showCopyright = true
 }: BaseFooterProps) {
+    const [currentYear, setCurrentYear] = useState<number>(new Date().getFullYear())
+
+    useEffect(() => {
+        setCurrentYear(new Date().getFullYear()) // Update the year only on the client side
+    }, [])
+
     const socialLinks = [
-        { href: "mailto:sumit@sumit.ml", icon: <Mail className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { href: "mailto:sid1.618033@gmail.com", icon: <Mail className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { href: "https://github.com/sumitdotml", icon: <Github className="w-3 h-3 sm:w-4 sm:h-4" /> },
         { href: "https://x.com/sumitdotml", icon: <Twitter className="w-3 h-3 sm:w-4 sm:h-4" /> }
     ]
@@ -95,7 +102,7 @@ export function BaseFooter({
                                 animate={{ opacity: 1 }}
                                 transition={{ delay: 0.4 }}
                             >
-                                © {new Date().getFullYear()} sumit.ml
+                                © {currentYear} sidhartha.dev
                             </motion.span>
                         )}
                     </div>
@@ -106,4 +113,4 @@ export function BaseFooter({
             <div className="h-8" />
         </footer>
     )
-} 
+}

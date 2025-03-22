@@ -44,7 +44,7 @@ export function HeroSection() {
                         className="relative"
                     >
                         <TextHeading as="h1" className="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-                            sumit.ml
+                            Sidhartha.dev
                         </TextHeading>
                     </motion.div>
 
@@ -55,7 +55,7 @@ export function HeroSection() {
                         transition={{ delay: 0.4 }}
                     >
                         <Text >
-                            Hi! I am Sumit.
+                            Hi! I am Sidhartha.
                         </Text>
 
                         <Ruler color='colorless' marginTop='sm' marginBottom='none'/>
@@ -66,7 +66,7 @@ export function HeroSection() {
                             transition={{ delay: 0.5 }}
                         >
                             <Text>
-                                I'm a swe based in Tokyo. I love coffee, machine learning, math, and among others. Glad to have you here! Feel free to look around :)
+                                I'm a CS undergrad with a flair for algorithms, a love for competitive code, exploring the depths of machine learning and the vast web. Fueled by coffee, glad to have you here—wander and discover :)
                             </Text>
                             <Ruler color='colorless' marginTop='sm' marginBottom='none'/>
                         </motion.div>
@@ -116,8 +116,8 @@ export function HeroSection() {
                     <Image
                         className="object-cover"
                         fill
-                        src="/gion-town.png" 
-                        alt="Gion Town"
+                        src="/stars.jpg" 
+                        alt="Look at the Stars"
                         priority
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 80vw"
                     />

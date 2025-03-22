@@ -44,21 +44,21 @@ export function CurrentWork() {
     const items = [
         {
             icon: <Brain className="w-4 h-4" />,
-            text: "Gaining a deeper understanding of traditional ML"
+            text: "Gaining a deeper understanding of Algorithms"
         },
         {
             icon: <Divide className="w-4 h-4" />,
-            text: "Learning math for ML"
+            text: "Learning Webdev workflows"
         },
         {
             icon: <Sparkles className="w-4 h-4" />,
-            text: "Exploring AI/ML research papers"
+            text: "Exploring AI/ML  research papers"
         },
         {
             icon: <BookOpen className="w-4 h-4" />,
             text: "Reading ",
             hyperlink: "/notes/books",
-            hyperlinkText: "ML Books",
+            hyperlinkText: "Books",
             endText: ""
         }
     ]

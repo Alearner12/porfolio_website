@@ -54,7 +54,7 @@ export function SocialLinks() {
             label: "twitter"
         },
         {
-            href: "mailto:sumit@sumit.ml",
+            href: "mailto:sid1.618033",
             icon: <Mail className="w-4 h-4" />,
             label: "email"
         }

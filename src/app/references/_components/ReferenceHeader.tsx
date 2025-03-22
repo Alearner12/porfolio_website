@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/styles/components/ui/theme-toggle"
 export function ReferenceHeader() {
     return (
         <StackVertical gap="md">
-            <title>References | sumit.ml</title>
+            <title>References | sidhartha.dev </title>
 
             <div className="flex items-center justify-between">
                 <DynamicBreadcrumb 

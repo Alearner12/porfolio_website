@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Books | sumit.ml',
+    title: 'Books | sidhartha.dev',
     description: 'A collection of books I\'ve read and taken notes on.',
 }
 
