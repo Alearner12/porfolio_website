@@ -8,7 +8,7 @@ import { IndividualPageFooter } from "@/common-components/footer/IndividualPageF
 import { DynamicBreadcrumb } from "@/common-components/breadcrumb/breadcrumb";
 import { ThemeToggle } from "@/styles/components/ui/theme-toggle";
 
-export default function MathReferences() {
+export default function PyTorchReferences() {
     return (
         <>
             <BaseContainer size="md" paddingX="md" paddingY="lg">
@@ -17,8 +17,8 @@ export default function MathReferences() {
                         <DynamicBreadcrumb
                         items={[
                             { href: '/', label: 'Home', emoji: '👾' },
-                            { href: '/references', label: 'References' },
-                            { label: 'Math' }
+                            { href: '/projects', label: 'Projects' },
+                            { label: 'PyTorch' }
                         ]}
                     />
                     <ThemeToggle />
@@ -26,7 +26,7 @@ export default function MathReferences() {
 
                     <StackVertical gap="md">
                         <TextHeading as="h1" weight="bold">
-                            Math References
+                            PyTorch References
                         </TextHeading>
 
                         <Text variant="red">Currently under construction. </Text>

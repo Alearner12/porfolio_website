@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { references } from '../_data/posts'
+import { references } from '../../_data/posts'
 
 type Params = Promise<{ slug: string }>
 
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Params }) {
         description: `${references.find(post => post.slug === slug)?.description}`,
         images: [
           {
-            url: `/references/posts/${slug}/opengraph-image.png`,
+            url: `/projects/posts/${slug}/opengraph-image.png`,
             width: 1200,
             height: 630,
             alt: `${references.find(post => post.slug === slug)?.description}`,
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Params }) {
         description: `${references.find(post => post.slug === slug)?.description}`,
         images: [
           {
-            url: `/references/posts/${slug}/twitter-image.png`,
+            url: `/projects/posts/${slug}/twitter-image.png`,
             width: 1200,
             height: 630,
             alt: `${references.find(post => post.slug === slug)?.description}`,

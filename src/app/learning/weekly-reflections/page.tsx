@@ -35,11 +35,37 @@ export default function WeeklyReflections() {
 
                 <StackVertical gap="md">
                     <TextHeading as="h4" weight="bold">
-                        Week 1, 2025 (Jan 1st - Jan 5th)
+                        Week 24, 2025 (Jun 10th - Jun 16th)
                     </TextHeading>
-                    <Text>
-                        Currently in the middle of my vacation here, will be back to learning in a week. Feels bad :(
+                    <Text className="space-y-4">
+                        <p>This week I've been diving deep into AI-powered development tools and exploring how they can enhance my workflow. I've been particularly interested in the intersection of AI and web development.</p>
+                        
+                        <p>Key learnings:</p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>Experimented with GPT-4 Vision API for generating code from screenshots</li>
+                            <li>Explored new React Server Components patterns in Next.js 14</li>
+                            <li>Started learning about AI-powered code completion tools and their integration with VS Code</li>
+                        </ul>
+
+                        <p>I'm particularly excited about the potential of AI to transform how we approach software development. The ability to generate boilerplate code, suggest improvements, and even help with debugging is changing the game.</p>
+                        
+                        <p>Current tech stack I'm working with:</p>
+                        <ul className="list-disc pl-6 space-y-2">
+                            <li>Next.js 14 with App Router</li>
+                            <li>TypeScript 5.0+</li>
+                            <li>Tailwind CSS for styling</li>
+                            <li>Various AI APIs and SDKs</li>
+                        </ul>
                     </Text>
+
+                    <div className="mt-8">
+                        <TextHeading as="h4" weight="bold">
+                            Week 1, 2025 (Jan 1st - Jan 5th)
+                        </TextHeading>
+                        <Text>
+                            Currently in the middle of my vacation here, will be back to learning in a week. Feels bad :(
+                        </Text>
+                    </div>
                 </StackVertical>
             </div>
 

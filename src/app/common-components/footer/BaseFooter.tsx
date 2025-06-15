@@ -34,10 +34,10 @@ export function BaseFooter({
 
     const socialLinks = [
         { href: "mailto:sid1.618033@gmail.com", icon: <Mail className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { href: "https://github.com/sumitdotml", icon: <Github className="w-3 h-3 sm:w-4 sm:h-4" /> },
-        { href: "https://x.com/sumitdotml", icon: <Twitter className="w-3 h-3 sm:w-4 sm:h-4" /> }
+        { href: "https://github.com/Alearner12", icon: <Github className="w-3 h-3 sm:w-4 sm:h-4" /> },
+        { href: "https://x.com/SID1618033?t=jMyifMlBDH28NcsniIvAPA&s=09", icon: <Twitter className="w-3 h-3 sm:w-4 sm:h-4" /> }
     ]
-
+    
     return (
         <footer className={cn("mt-auto pt-12", className)}>
             {/* Super subtle gradient line */}

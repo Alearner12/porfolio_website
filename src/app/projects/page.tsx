@@ -1,19 +1,23 @@
 import { StackVertical } from "@/common-components/layout-stack/layout-stack";
 
 import BaseContainer from "@/common-components/base-container/base-container";
-import { ReferenceHeader } from "./_components/ReferenceHeader";
-import { ReferenceCard } from "./_components/ReferenceCard";
-import { references } from "./_data/posts";
+import { ProjectHeader } from "./_components/ProjectHeader";
+import { ProjectCard } from "./_components/ProjectCard";
+import { projects } from "./_data/projects";
 import { SectionFooter } from "@/common-components/footer/SectionFooter";
-export default function References() {
+export default function Projects() {
     return (
         <>
             <BaseContainer size="md" paddingX="md" paddingY="lg">
                 <StackVertical gap="md">
-                    <ReferenceHeader />
+                    <ProjectHeader />
                     <StackVertical gap="none">
-                        {references.map((reference) => (
-                            <ReferenceCard key={reference.id} post={reference} />
+                        {projects.map((project, index) => (
+                            <ProjectCard 
+                                key={project.id} 
+                                project={project} 
+                                isLast={index === projects.length - 1}
+                            />
                         ))}
                     </StackVertical>
                 </StackVertical>

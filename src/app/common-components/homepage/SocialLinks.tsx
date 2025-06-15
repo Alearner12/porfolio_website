@@ -44,12 +44,12 @@ function SocialLink({ href, icon, label, delay }: SocialLinkProps) {
 export function SocialLinks() {
     const links = [
         {
-            href: "https://github.com/sumitdotml",
+            href: "https://github.com/Alearner12l",
             icon: <Github className="w-4 h-4" />,
             label: "github"
         },
         {
-            href: "https://x.com/sumitdotml",
+            href: "https://x.com/SID1618033?t=jMyifMlBDH28NcsniIvAPA&s=09",
             icon: <Twitter className="w-4 h-4" />,
             label: "twitter"
         },

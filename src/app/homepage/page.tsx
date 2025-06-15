@@ -5,7 +5,6 @@ import { StackVertical } from "@/common-components/layout-stack/layout-stack"
 import { HomepageFooter } from "@/common-components/footer/HomepageFooter"
 import { HeroSection } from "@/common-components/homepage/HeroSection"
 import { CurrentWork } from "@/common-components/homepage/CurrentWork"
-import { ProjectSection } from "@/common-components/homepage/project" // Import the new component
 import { Navbar } from "@/common-components/navbar/Navbar"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { HomepageSocials } from "@/common-components/homepage/HomepageSocials"
@@ -21,7 +20,6 @@ export default function Homepage() {
         <StackVertical gap="lg">
             <HeroSection />
             <CurrentWork />
-            <ProjectSection /> 
             <HomepageSocials />
         </StackVertical>
       </BaseContainer>
