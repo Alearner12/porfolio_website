@@ -3,11 +3,16 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": ".next"
+      }
     }
   ],
   "routes": [
     { "handle": "filesystem" },
+    { "src": "/_next/static/(.*)", "dest": "/_next/static/$1" },
+    { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/.*", "dest": "/" }
   ],
   "buildCommand": "next build",
