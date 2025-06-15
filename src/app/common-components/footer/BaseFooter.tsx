@@ -58,55 +58,56 @@ export function BaseFooter({
                     </div>
                 )}
 
-                {/* Social Links and Copyright - Second Row */}
-                {(showSocialLinks || showCopyright) && (
-                    <div className="flex items-center justify-center gap-6 sm:gap-8">
-                        {/* Social Links */}
-                        {showSocialLinks && (
-                            <div className="flex items-center gap-6">
-                                {socialLinks.map((link, index) => (
-                                    <motion.div
-                                        key={link.href}
-                                        whileHover={{ y: -2 }}
-                                        whileTap={{ scale: 0.95 }}
-                                        initial={{ opacity: 0, y: 10 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ 
-                                            duration: 0.2,
-                                            delay: index * 0.1 
-                                        }}
-                                    >
-                                        <Link
-                                            href={link.href}
-                                            target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-                                            className={cn(
-                                                "block text-purple-400/80 hover:text-purple-400",
-                                                "transition-all duration-200",
-                                                "-m-2 p-2",
-                                                "hover:bg-purple-400/10 rounded-md",
-                                                "hover:shadow-md hover:shadow-purple-500/5"
-                                            )}
-                                        >
-                                            {link.icon}
-                                        </Link>
-                                    </motion.div>
-                                ))}
-                            </div>
-                        )}
-
-                        {/* Copyright */}
-                        {showCopyright && (
-                            <motion.span 
-                                className="text-[10px] sm:text-xs text-purple-400"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.4 }}
+                {/* Bottom section with copyright and social links */}
+                <div className="w-full flex flex-col sm:flex-row justify-between items-center gap-4 mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+                    <div className="flex flex-col items-center sm:items-start gap-1">
+                        <span className="text-xs text-gray-500 dark:text-gray-400">
+                            © {currentYear} sidhartha.dev
+                        </span>
+                        <span className="text-xs text-gray-400 dark:text-gray-500">
+                            Design inspired by{' '}
+                            <a 
+                                href="https://github.com/sumitdotml/website" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="hover:text-purple-500 transition-colors"
                             >
-                                © {currentYear} sidhartha.dev
-                            </motion.span>
-                        )}
+                                Sumit's Portfolio
+                            </a>
+                        </span>
                     </div>
-                )}
+                    {showSocialLinks && (
+                        <div className="flex items-center gap-6">
+                            {socialLinks.map((link, index) => (
+                                <motion.div
+                                    key={link.href}
+                                    whileHover={{ y: -2 }}
+                                    whileTap={{ scale: 0.95 }}
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ 
+                                        duration: 0.2,
+                                        delay: index * 0.1 
+                                    }}
+                                >
+                                    <Link
+                                        href={link.href}
+                                        target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                                        className={cn(
+                                            "block text-purple-400/80 hover:text-purple-400",
+                                            "transition-all duration-200",
+                                            "-m-2 p-2",
+                                            "hover:bg-purple-400/10 rounded-md",
+                                            "hover:shadow-md hover:shadow-purple-500/5"
+                                        )}
+                                    >
+                                        {link.icon}
+                                    </Link>
+                                </motion.div>
+                            ))}
+                        </div>
+                    )}
+                </div>
             </div>
 
             {/* Bottom padding */}
