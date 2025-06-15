@@ -1,7 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { ThemeProvider } from '@/styles/theme-provider'
-import { cn } from '@/styles/lib/utils'
+import { ThemeProvider } from '@/components/theme-provider'
+import { cn } from '@/lib/utils'
 import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
